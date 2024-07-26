@@ -32,6 +32,8 @@ private:
 
 	float MaxSpeed = 10.0f;
 public:
+	bool firstMove = true;
+
 	Camera();
 	Camera(glm::vec3 position, glm::vec3 direction, float fov, float speed);
 

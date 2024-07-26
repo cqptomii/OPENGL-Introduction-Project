@@ -1,10 +1,9 @@
 #include "Camera.h"
 
-Camera::Camera() : position(glm::vec3(0.0f,0.0f,-3.0f)){
+Camera::Camera() : position(glm::vec3(0.0f,0.0f,-3.0f)), direction(glm::vec3(0.0f,0.0f,0.0f)), FOV(45.0f), MovementSpeed(2.5f), MouseSensivity(1.0f), EulerYaw(-90.0f), EulerPitch(0.0f) {
 
 }
-Camera::Camera(glm::vec3 position, glm::vec3 direction, float fov, float speed) {
-
+Camera::Camera(glm::vec3 position, glm::vec3 direction, float fov, float speed){
 }
 void Camera::reloadCamParameter() {
 	this->direction = glm::vec3(1.0f);
